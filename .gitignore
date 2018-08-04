@@ -1,0 +1,6 @@
+.idea
+tests/config.*
+metalist.py.egg-info/
+metalist/__pycache__/
+build/
+dist/
