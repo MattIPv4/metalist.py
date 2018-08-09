@@ -1,7 +1,7 @@
 [![PyPI](https://img.shields.io/pypi/v/metalist.py.svg)](https://pypi.org/project/metalist.py/)
 
 # metalist.py
-**A simple API wrapper to post Discord bot stats to all known bot lists using themetalist.org data.**
+**A simple API wrapper to post Discord bot stats to all known bot lists using metalist.xyz data.**
 
 ## Installation
 

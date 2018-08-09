@@ -1,5 +1,5 @@
 """
- *  metalist.py: A simple API wrapper to post Discord bot stats to all known bot lists using themetalist.org data.
+ *  metalist.py: A simple API wrapper to post Discord bot stats to all known bot lists using metalist.xyz data.
  *  <https://github.com/MattIPv4/metalist.py/>
  *  Copyright (C) 2018 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
@@ -76,13 +76,13 @@ class Client:
 
     def set_auth(self, list_id: str, auth_token: str):
         """
-        Sets an authorisation token for the given list id from themetalist.org
+        Sets an authorisation token for the given list id from metalist.xyz
 
         Parameter
         ========
 
         list_id: str
-            The ID of the list from themetalist.org
+            The ID of the list from metalist.xyz
 
         auth_token: str
             The authorisation token this list provided you to use their API.
@@ -91,13 +91,13 @@ class Client:
 
     def remove_auth(self, list_id: str):
         """
-        Removes an authorisation token for the given list id from themetalist.org
+        Removes an authorisation token for the given list id from metalist.xyz
 
         Parameter
         ========
 
         list_id: str
-            The ID of the list from themetalist.org
+            The ID of the list from metalist.xyz
         """
         self.base.remove_auth(list_id)
 

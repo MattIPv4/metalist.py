@@ -1,5 +1,5 @@
 """
- *  metalist.py: A simple API wrapper to post Discord bot stats to all known bot lists using themetalist.org data.
+ *  metalist.py: A simple API wrapper to post Discord bot stats to all known bot lists using metalist.xyz data.
  *  <https://github.com/MattIPv4/metalist.py/>
  *  Copyright (C) 2018 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
@@ -24,7 +24,7 @@ __title__ = 'metalist.py'
 __author__ = 'MattIPv4'
 __license__ = 'MIT'
 __copyright__ = 'Copyright 2018, MattIPv4'
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 name = "metalist"
 
@@ -36,4 +36,4 @@ from .exceptions import *
 
 VersionInfo = namedtuple('VersionInfo', 'major minor micro releaselevel serial')
 
-version_info = VersionInfo(major=1, minor=0, micro=0, releaselevel='final', serial=0)
+version_info = VersionInfo(major=1, minor=0, micro=1, releaselevel='final', serial=0)

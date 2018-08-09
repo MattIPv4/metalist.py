@@ -1,5 +1,5 @@
 """
- *  metalist.py: A simple API wrapper to post Discord bot stats to all known bot lists using themetalist.org data.
+ *  metalist.py: A simple API wrapper to post Discord bot stats to all known bot lists using metalist.xyz data.
  *  <https://github.com/MattIPv4/metalist.py/>
  *  Copyright (C) 2018 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
