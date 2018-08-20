@@ -20,9 +20,16 @@
  *   <https://github.com/MattIPv4/metalist.py/blob/master/LICENSE>
 """
 
-import re
-
 from setuptools import setup
+
+from metalist import __title__, __author__, __version__
+
+if not __title__:
+    raise RuntimeError('title is not set')
+if not __author__:
+    raise RuntimeError('author is not set')
+if not __version__:
+    raise RuntimeError('version is not set')
 
 with open("requirements.txt", "r") as f:
     requirements = f.readlines()
@@ -30,17 +37,11 @@ with open("requirements.txt", "r") as f:
 with open("README.md", "r") as f:
     readme = f.read()
 
-with open("metalist/__init__.py", "r") as f:
-    version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE).group(1)
-
-if not version:
-    raise RuntimeError('version is not set')
-
 setup(
-    name="metalist.py",
-    author="MattIPv4",
+    name=__title__,
+    author=__author__,
     url="https://github.com/MattIPv4/metalist.py/",
-    version=version,
+    version=__version__,
     packages=['metalist'],
     python_requires=">= 3.5",
     include_package_data=True,
