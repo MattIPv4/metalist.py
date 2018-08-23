@@ -1,5 +1,8 @@
 [![PyPI](https://img.shields.io/pypi/v/metalist.py.svg)](https://pypi.org/project/metalist.py/)
 
+# Warning: metalist.py has been deprecated
+ Please consider using [discordlists.py](https://github.com/MattIPv4/discordlists.py/) instead which is also available on [PyPi](https://pypi.org/project/discordlists.py/).
+
 # metalist.py
 **A simple API wrapper to post Discord bot stats to all known bot lists using metalist.xyz data.**
 
@@ -26,8 +29,8 @@ Install via pip (recommended)
         def __init__(self, bot):
             self.bot = bot
             self.metalist = metalist.Client(self.bot)  # Create a Client instance
-            self.metalist.start_loop()  # Posts the server count every 30 minutes
             self.metalist.set_auth("botsfordiscord.com", "cfd28b742fd7ddfab1a211934c88f3d483431e639f6564193") # Set authorisation token for a bot list
+            self.metalist.start_loop()  # Posts the server count automatically every 30 minutes
 
     def setup(bot):
         bot.add_cog(Stats(bot))
@@ -38,4 +41,4 @@ For general support and discussion of this project, please join the Discord serv
 [![Discord Server](https://discordapp.com/api/guilds/204663881799303168/widget.png?style=banner2)](https://discord.gg/qyXqA7y)
 
 To check known bugs and see planned changes and features for this project, please see the GitHub issues.\
-Found a bug we don't already have an iss
+Found a bug we don't already have an issue for? Please report it in a new GitHub issue with as much detail as you can!
